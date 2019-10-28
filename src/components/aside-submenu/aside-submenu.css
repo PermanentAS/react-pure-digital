@@ -1,0 +1,92 @@
+.sub-menu-item {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 16px;
+  list-style: none;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.success {
+  color: #4ca34c;
+}
+
+.failure {
+  color: #de4d3b;
+}
+
+.sub-menu-item .success + div {
+  border-radius: 50%;
+  border: 2px solid #4ca34c;
+  background: url("./../../img/success-mark.png") no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+
+.sub-menu-item .failure + div {
+  border-radius: 50%;
+  border: 2px solid #de4d3b;
+  background: url("./../../img/failure-mark.png") no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+
+.sub-menu-item .checkbox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sub-menu-item .checkbox label {
+  opacity: 0.7;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.sub-menu-item .checkbox label + div {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+  transform: translate(50%, 50%);
+  background-color: #111921;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.sub-menu-item .checkbox .checker:checked + label {
+  opacity: 1;
+}
+
+.sub-menu-item .checkbox .checker:checked + label + div {
+  background-color: #fff;
+}
+
+.checker {
+  display: none;
+}
+
+.btn-aside {
+  display: block;
+  height: 48px;
+  width: 412px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4ca34c;
+  border: 0.5px solid #4ca34c;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: transparent;
+  margin: 30px auto;
+  transition: all 0.5s;
+}
+
+.btn-aside:hover {
+  color: rgb(70, 221, 70);
+}

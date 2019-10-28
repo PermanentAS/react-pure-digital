@@ -1,0 +1,140 @@
+.circle-menu {
+  position: relative;
+  width: 830px;
+  height: 830px;
+  margin: 100px auto;
+}
+
+.circle-menu .center {
+  position: absolute;
+  top: 415px;
+  left: 415px;
+  z-index: 1000;
+  height: 450px;
+  width: 450px;
+  padding: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.circle-menu .center h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 120px;
+}
+
+.circle-menu .center p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 15px;
+  color: #6e7177;
+}
+
+.circle-menu ul {
+  position: absolute;
+  width: 770px;
+  height: 770px;
+  margin: 30px;
+  padding: 0;
+  list-style: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circle-menu li {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #f1f5f9;
+  top: -120px;
+  left: -120px;
+  transform-origin: 100% 100%;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.circle-menu li:hover {
+  background-color: #ebf0f5;
+}
+
+.circle-menu li.active {
+  background-color: #4ca34c;
+}
+
+.circle-menu li:nth-child(1) {
+  transform: rotate(0deg) skew(45deg);
+}
+
+.circle-menu li:nth-child(2) {
+  transform: rotate(45deg) skew(45deg);
+}
+
+.circle-menu li:nth-child(3) {
+  transform: rotate(90deg) skew(45deg);
+}
+
+.circle-menu li:nth-child(4) {
+  transform: rotate(135deg) skew(45deg);
+}
+
+.circle-menu li:nth-child(5) {
+  transform: rotate(180deg) skew(45deg);
+}
+
+.circle-menu li:nth-child(6) {
+  transform: rotate(225deg) skew(45deg);
+}
+
+.circle-menu li:nth-child(7) {
+  transform: rotate(270deg) skew(45deg);
+}
+
+.circle-menu li:nth-child(8) {
+  transform: rotate(315deg) skew(45deg);
+}
+
+.circle-menu li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  margin: 285px 0 0 260px;
+}
+
+
+/*Icons*/
+.circle-menu li:nth-child(1) span {
+  transform: skew(-45deg) rotate(360deg);
+}
+
+.circle-menu li:nth-child(2) span {
+  transform: skew(-45deg) rotate(-45deg);
+}
+
+.circle-menu li:nth-child(3) span {
+  transform: skew(-45deg) rotate(-90deg);
+}
+
+.circle-menu li:nth-child(4) span {
+  transform: skew(-45deg) rotate(-135deg);
+}
+
+.circle-menu li:nth-child(5) span {
+  transform: skew(-45deg) rotate(-180deg);
+}
+
+.circle-menu li:nth-child(6) span {
+  transform: skew(-45deg) rotate(-225deg);
+}
+
+.circle-menu li:nth-child(7) span {
+  transform: skew(-45deg) rotate(-270deg);
+}
+
+.circle-menu li:nth-child(8) span {
+  transform: skew(-45deg) rotate(-315deg);
+}
